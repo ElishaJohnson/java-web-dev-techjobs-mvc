@@ -27,5 +27,18 @@
         </div>
     </div>
 
+    <table th:fragment="job-listing" class="job-listing">
+        <tr th:each="job: ${jobs}">
+            <td>
+                <p th:text="'ID: ' + ${job.id}">ID data not available</p>
+                <p th:text="'Name: ' + ${job.name}">Name data not available</p>
+                <p th:text="'Employer: ' + ${job.employer}">Employer data not available</p>
+                <p th:text="'Location: ' + ${job.location}">Location data not available</p>
+                <p th:text="'Position Type: ' + ${job.positionType}">Position Type data not available</p>
+                <p th:text="'Skill: ' + ${job.coreCompetency}">Skill data not available</p>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
